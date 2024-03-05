@@ -1,1 +1,1 @@
-# ES6 Basics
+# Frontend Specialization
