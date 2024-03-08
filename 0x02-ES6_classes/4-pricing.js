@@ -34,7 +34,7 @@ export default class Pricing {
 
   static convertPrice(amount, conversionRate) {
     if (typeof amount !== 'number') throw new TypeError('Currency should be an integer');
-    if (typeof convertRate !== 'object') throw new TypeError('Conversion rate should be an integer');
+    if (typeof conversionRate !== 'number') throw new TypeError('Conversion rate should be an integer');
 
     return amount * conversionRate;
   }
