@@ -1,4 +1,4 @@
 import handleResponseFromAPI from './2-then';
 
-const promise = Promise.reject();
-handleResponseFromAPI(promise);
+const promise = Promise.resolve();
+handleResponseFromAPI(promise).then((b) => console.log(b));
