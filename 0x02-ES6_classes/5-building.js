@@ -3,26 +3,28 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-underscore-dangle */
-// export default class Building {
-//   constructor(sqft) {
-//     // if (new.target === Building) {
+export default class Building {
+  constructor(sqft) {
+    // if (new.target === Building) {
 
-//     // }
+    // }
 
-//     if (typeof sqft !== 'number') throw new TypeError('Amount should be an integer');
+    if (typeof sqft !== 'number') throw new TypeError('Amount should be an integer');
 
-//     this._sqft = sqft;
-//   }
+    this._sqft = sqft;
+  }
 
-//   get sqft() {
-//     return this._sqft;
-//   }
+  get sqft() {
+    return this._sqft;
+  }
 
-//   // eslint-disable-next-line class-methods-use-this
-//   evacuationWarningMessage() {
-//     throw new Error('Class extending Building must override evacuationWarningMessage');
-//   }
-// }
+  //   // eslint-disable-next-line class-methods-use-this
+  evacuationWarningMessage() {
+    throw new Error('Class extending Building must override evacuationWarningMessage');
+  }
+}
+
+/**
 class AbstractClass {
   constructor() {
     // if (new.target === AbstractClass) {
@@ -48,4 +50,5 @@ class ConcreteClass extends AbstractClass {
 }
 
 const obj = new ConcreteClass();
-// obj.abstractMethod(); // Outputs: "Implemented abstract method"
+// obj.abstractMethod(); // Outputs: "Implemented abstract method
+* */
